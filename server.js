@@ -63,7 +63,7 @@ app.get('/people', async (req, res) => {
 
 
 // Create Route
-app.post('/people/:id', async (req, res) => {
+app.post('/people', async (req, res) => {
   try {
     res.status(201).json(await People.create(req.body));
   } catch (error) {
